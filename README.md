@@ -1,4 +1,4 @@
-# MexiAI
+# MexiAI      https://mexai.azurewebsites.net
 Proyecto desarrollado para el Hackaton de Innovaccion
 ![Integrantes](https://github.com/KarlaTorres21/MexiAI/blob/main/mexAifinal/static/Imagenes/mexai.PNG)
 ## Descripción del proyecto
