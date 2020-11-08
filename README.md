@@ -31,6 +31,7 @@ Segundo ejemplo:
 
 
 ## Cómo lo hace
+Se hizo uso del lenguaje Python para realizar la parte de reconocimiento de objetos en las ofrendas con ayuda de la herramienta Custom Vision de Azure. Para la parte del boooBot se creó una base en QnA con apróximadamente 50 preguntas sobre temas de varias categorías.
 
 ## Retos a los que nos enfrentamos
 El primer reto al que nos enfrentamos fue al conocimiento que teníamos sobre las herramientas que habíamos planeado utilizar, mientras elaborabamos el proyecto salian más dudas y realizabamos las investigaciones correspondientes, otro factor fue el tiempo, debido a que cada uno de nosotros tenía clases o tareas pendientes por lo que no le pudimos dedicar el tiempo que nos hubiera gustado, sin embargo, pudimos realizar un proyecto que podemos mejorar a futuro.
@@ -40,3 +41,10 @@ Debemos estar en constante aprendizaje, cada vez salen más herramientas y es mu
 
 ## Qué sigue
 Seguir aprendiendo sin límites!
+
+## Integrantes
+Sarabia Roque Enrique viajero01746@innovaccion.mx
+Torres Olivera Karla Paola viajero01749@innovaccion.mx
+KENIA ARLEN CO CONTRERAS QUINTERO viajero33562@innovaccion.mx
+ABRIL DANIELA UREA SAUCEDO viajero34982@innovaccion.mx
+
