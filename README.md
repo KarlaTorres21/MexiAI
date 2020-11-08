@@ -12,9 +12,22 @@ Como segundo elemento se implemento un programa capaz de detectar los elementos 
 ## Cómo funciona el proyecto
 ### Boobot
   Funcionamiento de nuestro querido boobot, demasiado amigable:
+  
 ![boobot](https://github.com/KarlaTorres21/MexiAI/blob/main/mexAifinal/static/Imagenes/boobot2.PNG)
+
 Preguntandto sobre gastronomía de día de muertos:
+
 ![boobot2](https://github.com/KarlaTorres21/MexiAI/blob/main/mexAifinal/static/Imagenes/boobot1.PNG)
+
+
+### Detecta tu altar
+Funcionamiento de la detección de los elementos en altares de muerto:
+
+![boobot](https://github.com/KarlaTorres21/MexiAI/blob/main/mexAifinal/static/Imagenes/altar.PNG)
+
+Segundo ejemplo:
+
+![boobot](https://github.com/KarlaTorres21/MexiAI/blob/main/mexAifinal/static/Imagenes/altar2.PNG)
 
 
 ## Cómo lo hace
