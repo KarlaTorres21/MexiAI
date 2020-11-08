@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
+    <link rel="stylesheet" href="{{ url_for("static", filename="./CSS/style.css") }}">
+    <link rel="icon" href="{{ url_for("static", filename="./Imagenes/calaverita.png") }}">
+    <title>Acerca de</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="./CSS/header.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="./CSS/acercaDe.css") }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    
+      <style type="text/css">
+        body{
+            background-image: url("{{ url_for("static", filename="./Imagenes/gifback1corto.gif") }}");
+        }      
+    </style>
+  </head>
+
+  <body id="body">
+    <div class="uk-background-cover uk-background-norepeat acercade  " id="Inicio">
+
+      <header class="toolBar">
+        <div class="logo" >
+            <img class="logoimage" src="{{ url_for("static", filename="./Imagenes/calavera.png") }}">
+        </div>
+        <nav class="tabs">
+            <div class="selector" style="width:118.859px; left:738.578px"></div>
+            <a onclick="moverseAPagina( './' )"><i class="fas fa-home"></i>Inicio</a>
+            <a onclick="moverseAPagina( './' )"><i class="fas fa-globe"></i>Un poco de historia</a>
+            <a onclick="moverseAPagina( './boobot' )"><i class="fas fa-skull"></i>BoooBot</a>
+            <a onclick="moverseAPagina( './ofrenda' )"><i class="fas fa-eye"></i>Detecta tu altar</a>
+            <a href="#" class="active" target="_blank">Acerca de</a>
+        </nav>
+      </header>
+
+      <div class="articleAcercaDe">
+      <article>
+        <figure>
+            <img alt="A rather marvellous macaw, opening one of its wings to support the cause." src="{{ url_for("static", filename="./Imagenes/calavera.png") }}" />
+        </figure>
+    
+        <div>
+            <p style="font-size: small;">
+              Nuestro proyecto MexAI se encarga de crear un espacio donde la inteligencia artificial y el día de muertos conviven para extender nuestra cultura. Se trata de un entorno interactivo donde el usuario puede hacer distintas actividades (relacionadas con la inteligencia artificial), por ejemplo subir una foto de un altar y que el sistema reconozca los elementos importantes y tradicionales con custom vision, un chatbot de preguntas frecuentes sobre la cultura y temas variados del día de muertos. 
+              Con las gran gama de herramientas que proporciona Azure, todas estas tareas son faciles de implementar, así que no te quedes con las ganas de hacer tu propia página o proyecto!
+            </p>
+            <p style="font-size: small;">Ver <a onclick="moverseAPagina( './politicas' )">Política de privacidad</a></p>
+        </div>
+      </article>
+      </div>
+
+
+    </div>
+  </body>
+  <script src="{{ url_for("static", filename="./Scripts/Links.js") }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{ url_for("static", filename="./Scripts/header.js") }}"></script>
+  <script src="{{ url_for("static", filename="./Scripts/acercaDe.js") }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
+      <link rel="stylesheet" href="{{ url_for("static", filename="./CSS/style.css") }}">
+      <link rel="icon" href="{{ url_for("static", filename="./Imagenes/calaverita.png") }}">
+      <title>Acerca de</title>
+      <link rel="stylesheet" href="{{ url_for("static", filename="./CSS/header.css") }}">
+      <link rel="stylesheet" href="{{ url_for("static", filename="./CSS/politicas.css") }}">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+      <style type="text/css">
+        body{
+            background-image: url("{{ url_for("static", filename="./Imagenes/gifback1corto.gif") }}");
+        }
+      </style>
+    </head>
+  
+    <body id="body">
+      <header class="toolBar">
+        <div class="logo" >
+            <img class="logoimage" src="{{ url_for("static", filename="./Imagenes/calavera.png") }}">
+        </div>
+        <nav class="tabs">
+            <a onclick="moverseAPagina( './' )"><i class="fas fa-home"></i>Inicio</a>
+            <a onclick="moverseAPagina( './' )"><i class="fas fa-globe"></i>Un poco de historia</a>
+            <a onclick="moverseAPagina( './boobot' )"><i class="fas fa-skull"></i>BoooBot</a>
+            <a onclick="moverseAPagina( './ofrenda' )"><i class="fas fa-eye"></i>Detecta tu altar</a>
+            <a onclick="moverseAPagina( './acercade' )"target="_blank">Acerca de</a>
+        </nav>
+      </header>
+
+      <div class="articleAcercaDe">
+        <article>
+          <figure>
+              <img alt="A rather marvellous macaw, opening one of its wings to support the cause." src="{{ url_for("static", filename="./Imagenes/calavera.png") }}" />
+          </figure>
+      
+          <div>
+            <h2>Política de Privacidad</h2>
+            <h6>Uso de información</h6>
+              <p style="font-size: small;">
+                La página web MexAI no recopila información de el/la usuario(a).
+              </p>
+              <h6>Futuras actualizaciones </h6>
+              <p style="font-size: small;">Es responsabilidad de el/la usuario(a) mantenerse atento ante posibles cambios, debiendo revisar periódicamente si hay modificaciones en estas condiciones y, si el/la usuario(a) continúa usando el servicio tras la publicación o actualización, ello implicará la aceptación y asunción de los mismos. En el caso que no esté de acuerdo con las actualizaciones de las condiciones de uso o de la política de privacidad, podrá renunciar dejando de usar el servicio.
+                El acceso y el uso de la página web es gratuito, salvo en lo relativo al costo de la conexión a internet a través de la red de telecomunicaciones suministrada por el proveedor de acceso contratado por el/la usuario(a).</a></p>
+          </div>
+        </article>
+      </div>
+    </body>
+    <script src="{{ url_for("static", filename="./Scripts/Links.js") }}"></script>
+    <script src="{{ url_for("static", filename="./Scripts/header.js") }}"></script>
+    <script src="{{ url_for("static", filename="./Scripts/acercaDe.js") }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+</html>

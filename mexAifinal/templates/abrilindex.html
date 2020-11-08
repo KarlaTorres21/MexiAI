@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
+    <link rel="{{ url_for("static", filename="./CSS/style.css") }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for("static", filename="./Imagenes/calaverita.png") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="./CSS/header.css") }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <title>MexIA</title>
+  </head>
+  <body id="body">
+    <div class="uk-section-default uk-background-blend-darken welcome uk-background-fixed uk-background-cover " id="Inicio">
+      <header class="toolBar">
+        <div class="logo" >
+            <img class="logoimage" src="{{ url_for("static", filename="./Imagenes/calavera.png") }}">
+        </div>
+        <nav class="tabs">
+            <div class="selector"></div>
+            <a href="#" class="active"><i class="fas fa-home"></i>Inicio</a>
+            <a onclick="moverseA( 'historia' )"><i class="fas fa-globe"></i>Un poco de historia</a>
+            <a onclick="moverseAPagina( './boobot' )"><i class="fas fa-skull"></i>BoooBot</a>
+            <a onclick="moverseAPagina( './ofrenda' )"><i class="fas fa-eye"></i>Detecta tu altar</a>
+            <a onclick="moverseAPagina( './acercade' )" target="_blank">Acerca de</a>
+        </nav>
+      </header>
+
+        <div class="uk-text-center ">
+
+            <div class="uk-grid-match uk-child-width-1-1@m mens-welcome  ">
+                <div>
+                  <br>
+                  <blockquote>
+                    <h2 style="font-size: 1.8em; margin: 10px;" class="text-white alte-bold uk-margin-small-top">"La vida de los muertos perdura en la memoria de los vivos."</h2>
+                    <footer class="alte-bold text-white" style="font-size: 1em;">Ciceron.</p>
+                  </blockquote>
+                </div>
+            </div>
+            <div class="container-offset">
+                <div>
+                    <img src="{{ url_for("static", filename="./Imagenes/calaverita.png") }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-section about" id="historia">
+      <div class="uk-container">
+
+        <h1 class="uk-heading-bullet">Sobre el Día de Muertos</h1>
+        <div class="uk-text-justify" uk-grid>
+          <div class="uk-width-1-1@m">
+              <p>El día de muertos es una celebración muy característica de los latino americanos, en específico los mexicanos, es una celebración, y aunque puedas pensar que es celebrar la muerte, en verdad todo esto es para celebrar la vida que se llevó y la nueva vida que se lleva después de la muerte, en el Mictlán, el primero de noviembre celebramos a todos los santos y a los niños y el segundo día de fiesta es para los fieles difuntos, donde gracias a los pétalos de cempasúchil que crean un puente entre nuestro mundo y el Mictlán. 
+                </p>
+                <p>
+                Con la ayuda del mejor amigo del hombre, el perro, pero no cualquier perro, el xoloitzcuintle las almas de nuestros seres queridos vienen a visitarnos encontrando un altar con cosas que significaron mucho para ellos y sal para que su alma siempre siga pura, llenan de regocijo las calles y al terminar la noche se despiden y con ayuda de sus guías vuelven al Mictlán, esperando ahí a que el próximo año se abra de nuevo este puente y podamos encontrarnos otra vez.
+              </p>
+                <p>En MexIA, como en todo México, queremos compartirles nuestras tradiciones, enseñarles a cocinar delicias para sus muertos y contarles cómo se originaron nuestras leyendas. Recuerden ¡el día de muertos es para todos!</p>
+          </div>
+        </div>
+
+        </div>
+    </div>
+    <!--intento de tarjetas  uk-child-width-expand@s -->
+      <div class="uk-grid-match uk-child-width-1-4@m uk-grid-small uk-text-center uk-margin-left uk-margin-right uk-child-width-expand@s" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500" uk-grid  >
+          <div>
+              <div class="uk-card uk-card-default uk-card-body" id="contenedor1">
+                  <h2 class="uk-align-center">Tonantzin</h2>
+                  <img src="{{ url_for("static", filename="./Imagenes/imagen1.jpg") }}" alt="" id="imgcaract">
+                  <p class="uk-card-body uk-text-center" style="margin-top: -20px;">Para los mexicas, era la madre de todo lo que existe.</p>
+              </div>
+          </div>
+          <div>
+              <div class="uk-card uk-card-default uk-card-body" id="contenedor1">
+                 <h2>Mictlantecuhtli</h2>
+                  <img src="{{ url_for("static", filename="./Imagenes/imagen2.jpg") }}" alt="" id="imgcaract">
+                  <p>El Señor del Mictlán. Es el dios del inframundo y de los muertos. Regía el mundo subterráneo, país de los muertos o reino de Mictlán. Ejercía su soberanía sobre los "nueve ríos subterráneos" y sobre las almas de los muertos.</p>
+              </div>
+          </div>
+          <div>
+              <div class="uk-card uk-card-default uk-card-body" id="contenedor1">
+                    <h2>Mictecacíhuatl</h2>
+                    <img src="{{ url_for("static", filename="./Imagenes/imagen3.jpg") }}" alt="" id="imgcaract3">
+                    <p>La Señora de las personas muertas. Es la Reina del Mictlán. Su propósito es vigilar los huesos de los muertos.</p>
+              </div>
+          </div>
+          <div> <!-- "font-size: 200%;"-->
+              <div class="uk-card uk-card-default uk-card-body" id="contenedor1">
+                  <h2>Tonacatecuhtli</h2>
+                  <img src="{{ url_for("static", filename="./Imagenes/imagen4.jpg") }}" alt="" id="imgcaract">
+                  <p>El Señor de nuestra carne o nuestro sustento. El dios junto con su señora Tonacacíhuatl, Señora de Nuestra Carne, personifican el sustento diario, el aspecto humano y paternal de los dioses como proveedores del alimento en la vida diaria.</p>
+              </div>
+          </div>
+     </div>
+          <br>
+<!--ese ultimo div no se que cierra--->
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uk-section-default uk-background-fixed uk-background-bottom-center footer">
+      <div class="uk-container uk-text-center" >
+        <img src="{{ url_for("static", filename="./Imagenes/logochico.png") }}">
+        <p>Desarrollado por: </p>
+        <div class="" uk-grid>
+           <div class="uk-width-1-4">
+              <p>Abril Daniela Ureña Saucedo</p>
+              <a href="https://github.com/abrildur"><img src="{{ url_for("static", filename="./Imagenes/pikachu.png") }}"></a>
+            </div>
+            <div class="uk-width-1-4">
+              <p>Enrique Sarabia Roque</p>
+              <a href="https://github.com/EnriqueSaro"><img src="{{ url_for("static", filename="./Imagenes/Enrique.jpg") }}"></a>
+            </div>
+            <div class="uk-width-1-4">
+              <p>Karla Paola Torres Olivera</p>
+              <a href="https://github.com/KarlaTorres21"><img src="{{ url_for("static", filename="./Imagenes/Karla.jpg") }}"></a>
+            </div>
+            <div class="uk-width-1-4">
+              <p>Kenia Arlen Contreras Quintero</p>
+              
+            </div>
+        </div>
+        <br>
+        <h3 class="text-black">Desarrollado para el Hackaton realizado por<br>Microsoft Innovacción Virtual México</h3>
+        <img src="{{ url_for("static", filename="./Imagenes/innovacion-virtual.png") }}">
+      </div>
+    </div>
+  </body>
+  <script src="{{ url_for("static", filename="./Scripts/Links.js") }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{ url_for("static", filename="./Scripts/header.js") }}"></script>
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+</html>
