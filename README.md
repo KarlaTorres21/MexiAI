@@ -1,6 +1,6 @@
 # MexiAI
 Proyecto desarrollado para el Hackaton de Innovaccion
-
+![Integrantes](https://github.com/KarlaTorres21/MexiAI/blob/main/mexAifinal/static/Imagenes/mexai.PNG)
 ## Descripción del proyecto
 Nuestro proyecto MexAI se encarga de crear un espacio donde la inteligencia artificial y el día de muertos conviven para extender nuestra cultura. Se trata de un entorno interactivo donde el usuario puede hacer distintas actividades(relacionadas con la inteligencia artificial), por ejemplo subir una foto de un altar y que el sistema reconozca los elementos importantes y tradicionales con custom vision, un chatbot de preguntas frecuentes sobre la cultura y temas variados del día de muertos.
 Nosotros consideramos que el día de muertos abarca demasiadas cosas hermosas que nos hacen sentir cerca de nuestros seres difuntos, es por esto que decidimos dar una pequeña probadita de todo para que se queden con ganas de saber más.
