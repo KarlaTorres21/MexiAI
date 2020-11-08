@@ -1,4 +1,0 @@
-flask
-azure-cognitiveservices-vision-customvision
-matplotlib
-Image
